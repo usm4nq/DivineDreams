@@ -1,0 +1,14 @@
+App/node_modules/*
+App/.vscode
+App/.sourcemaps
+App/.editorconfig
+App/www
+App/platforms
+App/plugins
+App/resources
+
+Web/node_modules/*
+Web/.travis.yml
+
+test/node_modules
+test/aoo/*

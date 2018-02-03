@@ -9,6 +9,3 @@ App/resources
 
 Web/node_modules/*
 Web/.travis.yml
-
-test/node_modules
-test/aoo/*

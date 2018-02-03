@@ -1,0 +1,18 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "header.scss";
+@import "foundation-overrides.scss";
+
+
+
+.wrap{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+

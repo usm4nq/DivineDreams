@@ -1,0 +1,20 @@
+
+
+.toolbar-background {
+    //background-color: #1771e7;
+    //background-color: #011d27;
+    background-color: #12d11f;
+}
+
+.main-menu{
+    .toolbar-background{
+        //background-color: rgb(233, 91, 10);
+        //background-color: #1771e7;
+        //background-color: #12d11f;
+        //background-color: #011d27;
+        background-color: skyblue;
+    }
+    ion-toolbar{
+        min-height: 65px;
+    }
+}

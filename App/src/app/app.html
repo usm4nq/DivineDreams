@@ -1,0 +1,40 @@
+
+<ion-menu [content]="content" class="main-menu">
+    <ion-header>
+        <ion-toolbar>
+            <button ion-button menuToggle right>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+            <ion-title>
+              Menu
+            </ion-title>
+            <ion-buttons end>
+              <button ion-button (click)="doClick()">
+                <ion-icon name="more"></ion-icon>
+              </button>
+            </ion-buttons>
+          </ion-toolbar>
+          
+    </ion-header>
+  
+    <ion-content>
+      <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ng-container *ngIf="p.title == 'Profile'; else elseTemplate">
+              <ion-avatar>
+                  <img src="../assets/imgs/SamplePhoto.jpg">
+              </ion-avatar>
+              My {{p.title}}
+          </ng-container>
+
+          <ng-template #elseTemplate>
+            {{p.title}}
+          </ng-template>
+        </button>
+        <button menuClose ion-item (click)="logout()">Logout</button>
+      </ion-list>
+    </ion-content>
+  
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
